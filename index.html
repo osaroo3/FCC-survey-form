@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Career Survey Form</h1>
+      <p id="description">This survey form is to help the Local Government Council have an idea of the employment stuation of the area for planning and budgeting purposes.</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label for="name" id="name-label" >Enter Your Name:</label>
+        <input type="text" id="name" placeholder="Ex. John Doe" required>
+        <label id="email-label" for="email">Enter Your Email:</label>
+        <input type="email" id="email" placeholder="Ex. jd@email.com" required>
+        <label id="number-label" for="number">Enter Your Age</label>
+        <input type="number" id="number" min="10" max="99" placeholder="Ex. 22">
+      <label for="dropdown">Do you have a job?</label>
+      <select name="dropdown" id="dropdown">
+        <option value="no">No</option>
+        <option selected value="yes">Yes</option>
+      </select>
+      <p>Job Description</p>
+      <label for="job-a">Engineer</label>
+      <input type="radio" id="job-a" name="job-type" value="job-a">
+      <label for="job-b">Nurse</label>
+      <input type="radio" id="job-b" name="job-type" value="job-b">
+      <label for="job-c">Banker</label>
+      <input type="radio" id="job-c" name="job-type" value="job-c">
+      <label for="job-d">Teacher</label>
+      <input type="radio" id="job-d" name="job-type" value="job-d">
+
+      <p>Which ward would you like to work in if we provide you a job?</p>
+      <label for="akpajo">Akpajo</label>
+      <input type="checkbox" id="akpajo" name="akpajo"
+      value="akpajo">
+      <label for="aleto">Aleto</label>
+      <input type="checkbox" id="aleto" name="aleto"
+      value="aleto">
+      <label for="alesa">Alesa</label>
+      <input type="checkbox" id="alesa" name="alesa"
+      value="alesa">
+
+      <label for="comments">Additional Comments?</label>
+      <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+
+<button type="submit" id="submit">Submit</button>  
+
+      </form>
+    </main>
+  </body>
+</html>
